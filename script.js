@@ -31,7 +31,7 @@ async function cliqueiNoBotao() {
     let chave = "SUA_CHAVE_OPENWEATHER_AQUI"
 
 
-    let endereco = `https://api.openweathermap.org/data/3.0/weather?q=${cidade}&appid=${chave}&units=metric&lang=pt_br`
+    let endereco = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chave}&units=metric&lang=pt_br`
     // Precisa avisar o JavaScript que voce vai ate o servidor 
     // Traduzir a resposta do servidor / Json
 
