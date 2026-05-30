@@ -24,12 +24,12 @@
     
 */
 
-const chaveIA = "SUA_CHAVE_GROQ_AQUI"
+
 
 async function cliqueiNoBotao() {
     let cidade = document.querySelector(".city-input").value
     let caixa = document.querySelector(".caixa-media")
-    const chave = "SUA_CHAVE_OPENWEATHER_AQUI"
+    let chave = "SUA_CHAVE_OPENWEATHER_AQUI"
     
 
     let endereco = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chave}&units=metric&lang=pt_br`
@@ -64,6 +64,7 @@ function detectaVoz() {
 }
 
 async function pedirSugestaoRoupa() {
+    let chaveIA = "SUA_CHAVE_GROQ_AQUI"
     let temperatura = document.querySelector(".temp").textContent
     let umidade = document.querySelector(".umidade").textContent
     let cidade = document.querySelector(".cidade").textContent
